@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+
 
 export default function Services() {
   return (
@@ -210,10 +209,10 @@ export default function Services() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl"></div>
             <div className="relative z-10">
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-                Let's Build the Future Together
+                Let&apos;s Build the Future Together
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Ready to transform your ideas into reality? Let's create something extraordinary.
+                Ready to transform your ideas into reality? Let&apos;s create something extraordinary.
               </p>
               <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl backdrop-blur-sm border border-white/20">
                 Get in Touch

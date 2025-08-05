@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+
 
 // TypeScript Interfaces
 interface Project {
@@ -178,7 +177,7 @@ export default function Projects() {
               </div>
               
               <h1 className="relative text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6 animate-fade-in-scale">
-                See What We've Built
+                See What We&apos;ve Built
               </h1>
               <p className="relative text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-slide-in-up">
                 Explore our portfolio of innovative projects that showcase cutting-edge technology, 

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Contact() {
@@ -35,11 +34,11 @@ export default function Contact() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
-              Let's Build the Future Together
+              Let&apos;s Build the Future Together
             </h1>
             
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
-              Tell us about your vision. We'll help you bring it to life.
+              Tell us about your vision. We&apos;ll help you bring it to life.
             </p>
           </div>
 
@@ -233,7 +232,7 @@ export default function Contact() {
             </div>
             
             <p className="text-gray-400 mb-4 text-lg">
-              "The next big thing starts with a message."
+              &ldquo;The next big thing starts with a message.&rdquo;
             </p>
             
             <p className="text-gray-500 text-sm">

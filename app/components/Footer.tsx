@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [currentYear] = useState(new Date().getFullYear());
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

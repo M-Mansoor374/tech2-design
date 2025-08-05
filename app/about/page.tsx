@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+
 
 export default function About() {
   return (
@@ -85,7 +84,7 @@ export default function About() {
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-4">Our Mission</h3>
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    To craft intelligent, interactive, and inspiring digital experiences that push the boundaries of what's possible in the digital realm.
+                    To craft intelligent, interactive, and inspiring digital experiences that push the boundaries of what&apos;s possible in the digital realm.
                   </p>
                 </div>
               </div>
@@ -344,7 +343,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl"></div>
             <div className="relative z-10">
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-relaxed">
-                "We don't just design interfaces — we craft intelligent experiences."
+                &ldquo;We don&apos;t just design interfaces — we craft intelligent experiences.&rdquo;
               </h2>
               <p className="text-xl text-gray-300">
                 — Tech2Design Team

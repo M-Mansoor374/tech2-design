@@ -155,7 +155,7 @@ export default function Services() {
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">Branding</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    Complete brand identity systems that tell your story and connect with your audience.
+                    Complete brand identity systems tha t tell your story and connect with your audience.
                   </p>
                 </div>
               </div>

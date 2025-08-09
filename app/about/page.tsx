@@ -241,7 +241,7 @@ export default function About() {
 
             {/* Innovation */}
             <div className="group">
-              <div className="relative p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 bg-gradient-to-br from-purple-500/10 mto-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-pink-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10 text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
@@ -292,8 +292,8 @@ export default function About() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Alex Chen</h3>
-                  <p className="text-blue-400 mb-3">Creative Director</p>
+                  <h3 className="text-xl font-bold text-white mb-2">Franics</h3>
+                  <p className="text-blue-400 mb-3">Winnett director</p>
                   <p className="text-gray-300 text-sm">Visionary leader driving our creative excellence</p>
                 </div>
               </div>
@@ -309,7 +309,7 @@ export default function About() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Sarah Kim</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">Kellie rose</h3>
                   <p className="text-cyan-400 mb-3">Lead Developer</p>
                   <p className="text-gray-300 text-sm">Technical architect behind our innovations</p>
                 </div>
@@ -326,8 +326,8 @@ export default function About() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Marcus Rodriguez</h3>
-                  <p className="text-purple-400 mb-3">UX Strategist</p>
+                  <h3 className="text-xl font-bold text-white mb-2">Chris Webb</h3>
+                  <p className="text-purple-400 mb-3">Web Developer</p>
                   <p className="text-gray-300 text-sm">Crafting intuitive user experiences</p>
                 </div>
               </div>

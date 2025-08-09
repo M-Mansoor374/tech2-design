@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import About from "@/app/about/page";
 import Services from "@/app/services/page";
 import Contact from "@/app/contact/page";
@@ -35,33 +34,33 @@ export default function Home() {
 
             {/* Navigation Links with 3D Effects */}
             <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
+              <a href="#home" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
                 <span className="relative z-10">Home</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-gray-300/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-gray-200/20 rounded-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-white/30 to-gray-100/30 rounded-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 blur-md"></div>
-              </Link>
+              </a>
               
-              <Link href="/services" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
+              <a href="#services" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
                 <span className="relative z-10">Services</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-gray-300/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-gray-200/20 rounded-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-white/30 to-gray-100/30 rounded-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 blur-md"></div>
-              </Link>
+              </a>
               
-              <Link href="/about" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
+              <a href="#about" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
                 <span className="relative z-10">About Us</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-gray-300/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-gray-200/20 rounded-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-white/30 to-gray-100/30 rounded-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 blur-md"></div>
-              </Link>
+              </a>
               
-              <Link href="/contact" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
+              <a href="#contact" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
                 <span className="relative z-10">Contact</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-gray-300/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-gray-200/20 rounded-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-white/30 to-gray-100/30 rounded-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 blur-md"></div>
-              </Link>
+              </a>
               
               <a href="#projects" className="nav-button relative px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-2xl group">
                 <span className="relative z-10">Projects</span>
@@ -85,7 +84,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           {/* Dark overlay for better text readability */}
@@ -159,9 +158,9 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/services" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <a href="#services" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               Explore Our Services
-            </Link>
+            </a>
             
             <button 
               onClick={() => {
@@ -185,11 +184,28 @@ export default function Home() {
           </div>
         </div>
       </section>
-              <About />
+      
+      {/* About Section */}
+      <div id="about">
+        <About />
+      </div>
+      
+      {/* Services Section */}
+      <div id="services">
         <Services />
+      </div>
+      
+      {/* Projects Section */}
+      <div id="projects">
         <Projects />
+      </div>
+      
+      {/* Contact Section */}
+      <div id="contact">
         <Contact />
-        <Footer />
+      </div>
+      
+      <Footer />
     </div>
   );
 }

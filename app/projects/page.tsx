@@ -13,6 +13,7 @@ interface Project {
   icon: string;
   link?: string;
   featured?: boolean;
+  caseStudyUrl?: string;
 }
 
 interface FilterButtonProps {
@@ -21,8 +22,140 @@ interface FilterButtonProps {
   onClick: () => void;
 }
 
+interface ProjectModalProps {
+  project: Project | null;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+// Project Modal Component
+const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
+  if (!isOpen || !project) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <div 
+        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+        onClick={onClose}
+      ></div>
+      
+      {/* Modal Content */}
+      <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl border border-gray-700/50 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        {/* Header */}
+        <div className="p-6 border-b border-gray-700/50">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="text-4xl">{project.icon}</div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">{project.title}</h2>
+                <p className="text-gray-400 text-sm">{project.category}</p>
+              </div>
+            </div>
+            <button
+              onClick={onClose}
+              className="text-gray-400 hover:text-white transition-colors duration-200"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="p-6 space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-2">Project Overview</h3>
+            <p className="text-gray-300 leading-relaxed">{project.description}</p>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-3">Technology Stack</h3>
+            <div className="flex flex-wrap gap-2">
+              {project.techStack.map((tech: string, index: number) => (
+                <span
+                  key={index}
+                  className="px-3 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-300 rounded-lg border border-blue-500/30"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-3">Key Features</h3>
+            <ul className="space-y-2 text-gray-300">
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-400">•</span>
+                <span>Advanced analytics and reporting capabilities</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-400">•</span>
+                <span>Real-time data processing and visualization</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-400">•</span>
+                <span>Scalable architecture for enterprise use</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-blue-400">•</span>
+                <span>Intuitive user interface and experience</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-3">Results & Impact</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-4 rounded-lg border border-blue-500/20">
+                <div className="text-2xl font-bold text-blue-400">85%</div>
+                <div className="text-sm text-gray-300">Performance Improvement</div>
+              </div>
+              <div className="bg-gradient-to-br from-green-500/10 to-cyan-500/10 p-4 rounded-lg border border-green-500/20">
+                <div className="text-2xl font-bold text-green-400">3x</div>
+                <div className="text-sm text-gray-300">Faster Development</div>
+              </div>
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-4 rounded-lg border border-purple-500/20">
+                <div className="text-2xl font-bold text-purple-400">99.9%</div>
+                <div className="text-sm text-gray-300">Uptime Reliability</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Footer */}
+        <div className="p-6 border-t border-gray-700/50 flex justify-between items-center">
+          <div className="text-sm text-gray-400">
+            Ready to start your project?
+          </div>
+          <div className="flex space-x-3">
+            <button
+              onClick={onClose}
+              className="px-4 py-2 text-gray-400 hover:text-white transition-colors duration-200"
+            >
+              Close
+            </button>
+            <button
+              onClick={() => {
+                // Scroll to contact section
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                onClose();
+              }}
+              className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Start Your Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Project Card Component
-const ProjectCard = ({ project }: { project: Project }) => {
+const ProjectCard = ({ project, onViewCaseStudy }: { project: Project; onViewCaseStudy: (project: Project) => void }) => {
   return (
     <div className="project-card group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-xl border border-gray-700/50 hover:border-gray-600/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
       {/* Background Glow Effect */}
@@ -62,7 +195,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
         
         {/* CTA Button */}
         <div className="pt-2">
-          <button className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          <button 
+            onClick={() => onViewCaseStudy(project)}
+            className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+          >
             View Case Study
           </button>
         </div>
@@ -96,6 +232,18 @@ const FilterButton = ({
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleViewCaseStudy = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   const filters = ["All", "Web Development", "AI", "SaaS", "Design", "Mobile"];
 
@@ -186,7 +334,10 @@ export default function Projects() {
               
               {/* CTA Button */}
               <div className="relative animate-slide-in-up">
-                <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-card-glow">
+                <button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-card-glow"
+                >
                   Start Your Project
                 </button>
               </div>
@@ -234,7 +385,10 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
-                    <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                    <button 
+                      onClick={() => handleViewCaseStudy(project)}
+                      className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                    >
                       View Case Study
                     </button>
                   </div>
@@ -252,19 +406,12 @@ export default function Projects() {
               className="animate-slide-in-up"
               style={{animationDelay: `${index * 0.1}s`}}
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={project} onViewCaseStudy={handleViewCaseStudy} />
             </div>
           ))}
         </div>
 
-        {/* Load More Section */}
-        {filteredProjects.length > 0 && (
-          <div className="text-center mt-16 animate-slide-in-up">
-            <button className="px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 border border-gray-600/50 animate-card-glow">
-              Load More Projects
-            </button>
-          </div>
-        )}
+
 
         {/* Scroll to Top Button */}
         <div className="fixed bottom-8 right-8 z-50">
@@ -277,6 +424,13 @@ export default function Projects() {
             </svg>
           </button>
         </div>
+
+        {/* Project Modal */}
+        <ProjectModal 
+          project={selectedProject}
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
       </div>
     </section>
   );

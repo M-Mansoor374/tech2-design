@@ -45,19 +45,19 @@ export default function Services() {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
             What We Build
           </h1>
           
-          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-2">
             Transforming ideas into immersive digital realities.
           </p>
 
           {/* Floating Tech Elements */}
-          <div className="flex justify-center space-x-8 mt-16">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg shadow-lg animate-float"></div>
-            <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-full shadow-lg animate-float" style={{animationDelay: '0.5s'}}></div>
-            <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg shadow-lg animate-float" style={{animationDelay: '1s'}}></div>
+          <div className="flex justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-12 sm:mt-16">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg shadow-lg animate-float"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-full shadow-lg animate-float" style={{animationDelay: '0.5s'}}></div>
+            <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg shadow-lg animate-float" style={{animationDelay: '1s'}}></div>
           </div>
         </div>
 
@@ -70,16 +70,16 @@ export default function Services() {
       </section>
 
       {/* Service Cards Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {/* UI/UX Design Card */}
             <Link href="/services/ui-ux-design" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 to-purple-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
-                    <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex items-center mb-4 sm:mb-6">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 110559.png"
                         alt="UI/UX Design Showcase"
@@ -89,8 +89,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">UI/UX Design</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">UI/UX Design</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Create intuitive, beautiful interfaces that users love. From wireframes to pixel-perfect designs.
                   </p>
                 </div>
@@ -99,10 +99,10 @@ export default function Services() {
 
             {/* 3D Web Apps Card */}
             <Link href="/services/3d-web-apps" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 to-blue-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 113124.png"
@@ -113,8 +113,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">3D Web Apps</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">3D Web Apps</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Immersive 3D experiences that push the boundaries of web technology and user engagement.
                   </p>
                 </div>
@@ -123,10 +123,10 @@ export default function Services() {
 
             {/* AI Integration Card */}
             <Link href="/services/ai-integration" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-pink-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 113406.png"
@@ -137,8 +137,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">AI Integration</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">AI Integration</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Smart solutions powered by artificial intelligence. From chatbots to predictive analytics.
                   </p>
                 </div>
@@ -147,10 +147,10 @@ export default function Services() {
 
             {/* Motion Design Card */}
             <Link href="/services/motion-design" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-400/5 to-teal-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 113832.png"
@@ -161,8 +161,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Motion Design</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Motion Design</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Fluid animations and micro-interactions that bring your digital experiences to life.
                   </p>
                 </div>
@@ -171,10 +171,10 @@ export default function Services() {
 
             {/* Branding Card */}
             <Link href="/services/branding" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-400/5 to-red-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 130121.png"
@@ -185,8 +185,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Branding</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Branding</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Complete brand identity systems that tell your story and connect with your audience.
                   </p>
                 </div>
@@ -195,10 +195,10 @@ export default function Services() {
 
             {/* Web Development Card */}
             <Link href="/services/web-development" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/5 to-purple-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 130350.png"
@@ -209,8 +209,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Web Development</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Web Development</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Cutting-edge web applications built with modern technologies and best practices.
                   </p>
                 </div>
@@ -219,10 +219,10 @@ export default function Services() {
 
             {/* Graphic Designing Card */}
             <Link href="/services/graphic-designing" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-pink-500/10 to-rose-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-pink-500/10 to-rose-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-400/5 to-rose-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 130533.png"
@@ -233,8 +233,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Graphic Designing</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Graphic Designing</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Creative visual solutions that capture attention and communicate your message effectively.
                   </p>
                 </div>
@@ -243,10 +243,10 @@ export default function Services() {
 
             {/* Machine Learning Card */}
             <Link href="/services/machine-learning" className="service-card group">
-              <div className="relative p-8 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/5 to-teal-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-4 sm:mb-6">
                     <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Image
                         src="/Screenshot 2025-08-11 131044.png"
@@ -257,8 +257,8 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Machine Learning</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Machine Learning</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                     Advanced AI algorithms and data-driven insights to automate and optimize your business processes.
                   </p>
                 </div>
@@ -269,11 +269,11 @@ export default function Services() {
       </section>
 
       {/* Interactive Visual Element - 3D Globe */}
-      <section className="relative py-20">
+      <section className="relative py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative h-96 flex items-center justify-center">
+          <div className="relative h-64 sm:h-80 md:h-96 flex items-center justify-center">
             {/* 3D Globe */}
-            <div className="relative w-64 h-64">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full animate-spin" style={{animationDuration: '30s'}}></div>
               <div className="absolute inset-4 bg-gradient-to-br from-cyan-400/30 to-blue-400/30 rounded-full animate-spin" style={{animationDuration: '25s', animationDirection: 'reverse'}}></div>
               <div className="absolute inset-8 bg-gradient-to-br from-purple-400/40 to-pink-400/40 rounded-full animate-spin" style={{animationDuration: '20s'}}></div>
@@ -289,18 +289,18 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="relative p-12 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 rounded-3xl text-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl"></div>
+          <div className="relative p-6 sm:p-8 md:p-12 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl text-center">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl sm:rounded-3xl"></div>
             <div className="relative z-10">
-              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
                 Let&apos;s Build the Future Together
               </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Ready to transform your ideas into reality? Let&apos;s create something extraordinary.
               </p>
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl backdrop-blur-sm border border-white/20">
+              <button className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl backdrop-blur-sm border border-white/20 text-sm sm:text-base">
                 Get in Touch
               </button>
             </div>

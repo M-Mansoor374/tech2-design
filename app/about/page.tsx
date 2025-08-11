@@ -44,19 +44,19 @@ export default function About() {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
             We Are Tech2Design
           </h1>
           
-          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-2">
             Designers. Innovators. Future builders.
           </p>
 
           {/* Floating Tech Elements */}
-          <div className="flex justify-center space-x-8 mt-16">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg shadow-lg animate-float"></div>
-            <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-full shadow-lg animate-float" style={{animationDelay: '0.5s'}}></div>
-            <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg shadow-lg animate-float" style={{animationDelay: '1s'}}></div>
+          <div className="flex justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-12 sm:mt-16">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg shadow-lg animate-float"></div>
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-full shadow-lg animate-float" style={{animationDelay: '0.5s'}}></div>
+            <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg shadow-lg animate-float" style={{animationDelay: '1s'}}></div>
           </div>
         </div>
 
@@ -69,40 +69,40 @@ export default function About() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
             {/* Mission Card */}
-            <div className="group">
-              <div className="relative p-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 to-purple-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
+                          <div className="group">
+                <div className="relative p-6 sm:p-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 to-purple-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Our Mission</h3>
+                    <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+                      The mission of Tech2Design is to drive innovation and excellence in technology and design by providing comprehensive and cutting-edge solutions tailored to the needs of each client. We aim to empower businesses through strategic digital transformations, ensuring they stay ahead in an ever-evolving technological landscape. At Tech2Design, our focus is on building sustainable, future-ready solutions that enhance growth and success for our clients.
+                    </p>
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">Our Mission</h3>
-                  <p className="text-gray-300 leading-relaxed text-lg">
-                    The mission of Tech2Design is to drive innovation and excellence in technology and design by providing comprehensive and cutting-edge solutions tailored to the needs of each client. We aim to empower businesses through strategic digital transformations, ensuring they stay ahead in an ever-evolving technological landscape. At Tech2Design, our focus is on building sustainable, future-ready solutions that enhance growth and success for our clients.
-                  </p>
                 </div>
               </div>
-            </div>
 
             {/* Vision Card */}
             <div className="group">
-              <div className="relative p-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+              <div className="relative p-6 sm:p-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 to-blue-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">Our Vision</h3>
-                  <p className="text-gray-300 leading-relaxed text-lg">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Our Vision</h3>
+                  <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
                     Tech2Design envisions technology as a transformative force for business efficiency and growth. We lead in innovation, crafting digital experiences to meet current and future demands, empowering businesses to stay ahead in the digital landscape. Our commitment is to build a better tomorrow with sustainable, forward-thinking strategies, ensuring technology serves as a catalyst for positive change and success.
                   </p>
                 </div>
@@ -113,21 +113,21 @@ export default function About() {
       </section>
 
       {/* Timeline / Journey Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mb-16 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-12 sm:mb-16 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
             Our Journey
           </h2>
           
           <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 to-purple-400"></div>
+            {/* Timeline Line - Hidden on mobile, visible on desktop */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 to-purple-400"></div>
             
             {/* Timeline Items */}
-            <div className="space-y-12">
+            <div className="space-y-8 sm:space-y-12">
               {/* 2020 */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-8 text-right">
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="w-full md:w-1/2 md:pr-8 md:text-right mb-4 md:mb-0">
                   <div className="group">
                     <div className="relative p-8 bg-gradient-to-br from-blue-500/15 to-purple-500/15 backdrop-blur-xl border border-white/20 rounded-3xl transition-all duration-700 transform hover:scale-105 hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-blue-500/20">
                       {/* Enhanced glow effect */}
@@ -161,13 +161,13 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="hidden md:block w-1/2 pl-8"></div>
               </div>
 
               {/* 2021 */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="w-1/2 pl-8">
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="hidden md:block w-1/2 pr-8"></div>
+                <div className="w-full md:w-1/2 md:pl-8">
                   <div className="group">
                     <div className="relative p-6 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -left-3 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-cyan-400 rounded-full border-4 border-gray-900"></div>
@@ -179,8 +179,8 @@ export default function About() {
               </div>
 
               {/* 2022 */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-8 text-right">
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="w-full md:w-1/2 md:pr-8 md:text-right mb-4 md:mb-0">
                   <div className="group">
                     <div className="relative p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -right-3 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-gray-900"></div>
@@ -189,13 +189,13 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="hidden md:block w-1/2 pl-8"></div>
               </div>
 
               {/* 2023 */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="w-1/2 pl-8">
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="hidden md:block w-1/2 pr-8"></div>
+                <div className="w-full md:w-1/2 md:pl-8">
                   <div className="group">
                     <div className="relative p-6 bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -left-3 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-green-400 rounded-full border-4 border-gray-900"></div>
@@ -207,8 +207,8 @@ export default function About() {
               </div>
 
               {/* 2024 */}
-              <div className="relative flex items-center">
-                <div className="w-1/2 pr-8 text-right">
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="w-full md:w-1/2 md:pr-8 md:text-right mb-4 md:mb-0">
                   <div className="group">
                     <div className="relative p-6 bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -right-3 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-gray-900"></div>
@@ -217,7 +217,7 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="hidden md:block w-1/2 pl-8"></div>
               </div>
             </div>
           </div>
@@ -225,13 +225,13 @@ export default function About() {
       </section>
 
       {/* Core Values Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mb-16 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-12 sm:mb-16 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
             Our Core Values
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Creativity */}
             <div className="group">
               <div className="relative p-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
@@ -300,13 +300,13 @@ export default function About() {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mb-16 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-12 sm:mb-16 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
             Meet the Team
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Team Member 1 */}
             <div className="group">
               <div className="relative p-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
@@ -318,8 +318,8 @@ export default function About() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">Franics Winnett</h3>
-                  <p className="text-blue-400 mb-3">Director</p>
-                  <p className="text-gray-300 text-sm">Visionary leader driving our creative excellence</p>
+                  <p className="text-blue-400 mb-2">Director</p>
+                  <p className="text-gray-300 text-sm">Leading with Vision, Driven by Values</p>
                 </div>
               </div>
             </div>
@@ -359,15 +359,15 @@ export default function About() {
         </div>
       </section>
       {/* Quote Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="relative p-12 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 rounded-3xl text-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl"></div>
+          <div className="relative p-6 sm:p-8 md:p-12 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl text-center">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl sm:rounded-3xl"></div>
             <div className="relative z-10">
-              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-relaxed">
                 &ldquo;We don&apos;t just design interfaces — we craft intelligent experiences.&rdquo;
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className="text-lg sm:text-xl text-gray-300">
                 — Tech2Design Team
               </p>
             </div>

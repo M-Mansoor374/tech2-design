@@ -58,7 +58,7 @@ const testimonials: Testimonial[] = [
   }
 ];
 
-export default function Testimonials() {
+export default function Reviews() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 

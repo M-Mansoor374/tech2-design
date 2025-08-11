@@ -270,7 +270,13 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
 // Project Card Component
 const ProjectCard = ({ project, onViewCaseStudy }: { project: Project; onViewCaseStudy: (project: Project) => void }) => {
   return (
-    <div className="project-card group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-xl border border-gray-700/50 hover:border-gray-600/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+    <div 
+      className="project-card group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-xl border border-gray-700/50 hover:border-gray-600/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
+      onClick={() => {
+        console.log('Card clicked!');
+        onViewCaseStudy(project);
+      }}
+    >
       {/* Background Glow Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       
@@ -308,15 +314,11 @@ const ProjectCard = ({ project, onViewCaseStudy }: { project: Project; onViewCas
         
         {/* CTA Button */}
         <div className="pt-2 relative z-10">
-          <button 
-            onClick={() => {
-              console.log('Button clicked!');
-              onViewCaseStudy(project);
-            }}
-            className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer relative z-20"
+          <div 
+            className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg relative z-20 text-center"
           >
             View Case Study
-          </button>
+          </div>
         </div>
       </div>
       
@@ -613,7 +615,11 @@ export default function Projects() {
             </h2>
             <div className="max-w-4xl mx-auto">
               {projects.filter(p => p.featured).map((project) => (
-                <div key={project.id} className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900/60 to-gray-800/40 backdrop-blur-xl border border-gray-700/50 hover:border-gray-600/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                <div 
+                  key={project.id} 
+                  className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900/60 to-gray-800/40 backdrop-blur-xl border border-gray-700/50 hover:border-gray-600/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
+                  onClick={() => handleViewCaseStudy(project)}
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-cyan-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative p-8">
                     <div className="flex items-center justify-between mb-6">
@@ -634,12 +640,9 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
-                    <button 
-                      onClick={() => handleViewCaseStudy(project)}
-                      className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                    >
+                    <div className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block">
                       View Case Study
-                    </button>
+                    </div>
                   </div>
                 </div>
               ))}

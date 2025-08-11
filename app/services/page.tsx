@@ -1,4 +1,6 @@
 
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Services() {
   return (
@@ -72,14 +74,20 @@ export default function Services() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* UI/UX Design Card */}
-            <div className="service-card group">
+            <Link href="/services/ui-ux-design" className="service-card group">
               <div className="relative p-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 to-purple-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
+                  <div className="flex items-center mb-6">
+                    <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 110559.png"
+                        alt="UI/UX Design Showcase"
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">UI/UX Design</h3>
                   <p className="text-gray-300 leading-relaxed">
@@ -87,17 +95,23 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* 3D Web Apps Card */}
-            <div className="service-card group">
+            <Link href="/services/3d-web-apps" className="service-card group">
               <div className="relative p-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 to-blue-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 113124.png"
+                        alt="3D Web Apps Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">3D Web Apps</h3>
                   <p className="text-gray-300 leading-relaxed">
@@ -105,17 +119,23 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* AI Integration Card */}
-            <div className="service-card group">
+            <Link href="/services/ai-integration" className="service-card group">
               <div className="relative p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-pink-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 113406.png"
+                        alt="AI Integration Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">AI Integration</h3>
                   <p className="text-gray-300 leading-relaxed">
@@ -123,17 +143,23 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Motion Design Card */}
-            <div className="service-card group">
+            <Link href="/services/motion-design" className="service-card group">
               <div className="relative p-8 bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-400/5 to-teal-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-teal-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 113832.png"
+                        alt="Motion Design Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">Motion Design</h3>
                   <p className="text-gray-300 leading-relaxed">
@@ -141,35 +167,47 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Branding Card */}
-            <div className="service-card group">
+            <Link href="/services/branding" className="service-card group">
               <div className="relative p-8 bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-400/5 to-red-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-                    </svg>
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 130121.png"
+                        alt="Branding Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">Branding</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    Complete brand identity systems tha t tell your story and connect with your audience.
+                    Complete brand identity systems that tell your story and connect with your audience.
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Web Development Card */}
-            <div className="service-card group">
+            <Link href="/services/web-development" className="service-card group">
               <div className="relative p-8 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/5 to-purple-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 130350.png"
+                        alt="Web Development Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">Web Development</h3>
                   <p className="text-gray-300 leading-relaxed">
@@ -177,7 +215,55 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
+
+            {/* Graphic Designing Card */}
+            <Link href="/services/graphic-designing" className="service-card group">
+              <div className="relative p-8 bg-gradient-to-br from-pink-500/10 to-rose-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-400/5 to-rose-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 130533.png"
+                        alt="Graphic Designing Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Graphic Designing</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Creative visual solutions that capture attention and communicate your message effectively.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Machine Learning Card */}
+            <Link href="/services/machine-learning" className="service-card group">
+              <div className="relative p-8 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/5 to-teal-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Image
+                        src="/Screenshot 2025-08-11 131044.png"
+                        alt="Machine Learning Showcase"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Machine Learning</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Advanced AI algorithms and data-driven insights to automate and optimize your business processes.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

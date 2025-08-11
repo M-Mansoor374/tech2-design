@@ -84,7 +84,7 @@ export default function About() {
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-4">Our Mission</h3>
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    To craft intelligent, interactive, and inspiring digital experiences that push the boundaries of what&apos;s possible in the digital realm.
+                    The mission of Tech2Design is to drive innovation and excellence in technology and design by providing comprehensive and cutting-edge solutions tailored to the needs of each client. We aim to empower businesses through strategic digital transformations, ensuring they stay ahead in an ever-evolving technological landscape. At Tech2Design, our focus is on building sustainable, future-ready solutions that enhance growth and success for our clients.
                   </p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default function About() {
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-4">Our Vision</h3>
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    Empowering brands to shape the future through immersive technology and cutting-edge design solutions.
+                    Tech2Design envisions technology as a transformative force for business efficiency and growth. We lead in innovation, crafting digital experiences to meet current and future demands, empowering businesses to stay ahead in the digital landscape. Our commitment is to build a better tomorrow with sustainable, forward-thinking strategies, ensuring technology serves as a catalyst for positive change and success.
                   </p>
                 </div>
               </div>
@@ -129,10 +129,35 @@ export default function About() {
               <div className="relative flex items-center">
                 <div className="w-1/2 pr-8 text-right">
                   <div className="group">
-                    <div className="relative p-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
-                      <div className="absolute -right-3 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-blue-400 rounded-full border-4 border-gray-900"></div>
-                      <h3 className="text-2xl font-bold text-white mb-2">2020</h3>
-                      <p className="text-gray-300">Founded with a vision to revolutionize digital design</p>
+                    <div className="relative p-8 bg-gradient-to-br from-blue-500/15 to-purple-500/15 backdrop-blur-xl border border-white/20 rounded-3xl transition-all duration-700 transform hover:scale-105 hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-blue-500/20">
+                      {/* Enhanced glow effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-cyan-500/5 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      
+                      {/* Timeline node with enhanced styling */}
+                      <div className="absolute -right-4 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full border-4 border-gray-900 shadow-lg group-hover:scale-125 transition-transform duration-500">
+                        <div className="absolute inset-1 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full opacity-60"></div>
+                      </div>
+                      
+                      {/* Content with enhanced typography */}
+                      <div className="relative z-10">
+                        <div className="flex items-center justify-start mb-4">
+                          <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mr-4">2020</h3>
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="space-y-3">
+                          <p className="text-gray-300 leading-relaxed text-lg font-light">
+                            Founded in 2020, <span className="text-blue-300 font-semibold">Tech2Design</span> emerged with a mission to revolutionize how businesses integrate technology and design.
+                          </p>
+                          <p className="text-gray-300 leading-relaxed text-lg font-light">
+                            Our aim is to drive innovation and create future-ready solutions that empower businesses to excel in a rapidly evolving digital landscape.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +172,7 @@ export default function About() {
                     <div className="relative p-6 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -left-3 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-cyan-400 rounded-full border-4 border-gray-900"></div>
                       <h3 className="text-2xl font-bold text-white mb-2">2021</h3>
-                      <p className="text-gray-300">Launched our first AI-powered design platform</p>
+                      <p className="text-gray-300">In 2021, we launched our first AI-powered design platform, marking a significant milestone in our journey to revolutionize the integration of technology and design for businesses.</p>
                     </div>
                   </div>
                 </div>
@@ -159,8 +184,8 @@ export default function About() {
                   <div className="group">
                     <div className="relative p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -right-3 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-gray-900"></div>
-                      <h3 className="text-2xl font-bold text-white mb-2">2022</h3>
-                      <p className="text-gray-300">Expanded to serve 50+ global clients</p>
+                      <h3 className="text-2xl font-bold text-white mb-2 text-left">2022</h3>
+                      <p className="text-gray-300">In 2022, we bolstered our team and delivered exceptional service to over 50 international clients, enhancing our global impact.</p>
                     </div>
                   </div>
                 </div>
@@ -175,7 +200,7 @@ export default function About() {
                     <div className="relative p-6 bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -left-3 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-green-400 rounded-full border-4 border-gray-900"></div>
                       <h3 className="text-2xl font-bold text-white mb-2">2023</h3>
-                      <p className="text-gray-300">Pioneered 3D web experiences and VR integration</p>
+                      <p className="text-gray-300">In 2023, we pioneered 3D web experiences with VR integration, enhancing our innovative technology solutions and solidifying our position as leaders in digital transformation services. This advancement underscores our dedication to delivering creative digital solutions and future-ready digital experiences for businesses worldwide.</p>
                     </div>
                   </div>
                 </div>
@@ -187,8 +212,8 @@ export default function About() {
                   <div className="group">
                     <div className="relative p-6 bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-5px] hover:shadow-2xl">
                       <div className="absolute -right-3 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-gray-900"></div>
-                      <h3 className="text-2xl font-bold text-white mb-2">2024</h3>
-                      <p className="text-gray-300">Leading the future of immersive digital experiences</p>
+                      <h3 className="text-2xl font-bold text-white mb-2 text-left">2024</h3>
+                      <p className="text-gray-300">In 2024, we lead the future of immersive digital experiences, enhancing design and technology integration. Our focus on AI-powered platforms and 3D VR experiences positions us at the forefront of creative digital solutions, driving tech-driven business growth for global clients.</p>
                     </div>
                   </div>
                 </div>
@@ -292,13 +317,12 @@ export default function About() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Franics</h3>
-                  <p className="text-blue-400 mb-3">Winnett director</p>
+                  <h3 className="text-xl font-bold text-white mb-2">Franics Winnett</h3>
+                  <p className="text-blue-400 mb-3">Director</p>
                   <p className="text-gray-300 text-sm">Visionary leader driving our creative excellence</p>
                 </div>
               </div>
             </div>
-
             {/* Team Member 2 */}
             <div className="group">
               <div className="relative p-6 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
@@ -315,7 +339,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-
             {/* Team Member 3 */}
             <div className="group">
               <div className="relative p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl">
@@ -335,7 +358,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Quote Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

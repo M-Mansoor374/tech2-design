@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 
 interface FormData {
@@ -184,32 +183,6 @@ export default function Contact() {
 
   return (
     <div id="contact" className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
-      {/* Header with Logo */}
-      <header className="relative z-20 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center">
-            <div className="flex items-center space-x-4 group">
-              <div className="relative w-20 h-20 transform group-hover:scale-110 transition-transform duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl blur-sm opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                <div className="relative w-full h-full">
-                  <Image
-                    src="/Tech 2 Design-01.png"
-                    alt="Tech 2 Design Logo"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-              </div>
-              <div className="text-white">
-                <div className="text-sm text-gray-300 font-medium tracking-wider">TECH 2 DESIGN</div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Tech 2 Design</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center py-20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -448,23 +421,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="relative py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-3 mb-6">
-              <div className="relative w-8 h-8">
-                <div className="absolute inset-0 transform rotate-45">
-                  <div className="w-full h-full bg-gradient-to-br from-orange-400 to-blue-500 rounded-lg shadow-lg"></div>
-                </div>
-                <div className="absolute inset-0 transform rotate-45 translate-x-1 translate-y-1">
-                  <div className="w-full h-full bg-gradient-to-br from-orange-300 to-blue-400 rounded-lg opacity-80"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 } 

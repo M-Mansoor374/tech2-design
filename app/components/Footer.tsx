@@ -19,6 +19,11 @@ export default function Footer() {
     }
   };
 
+  // Function to handle navigation to service pages
+  const navigateToService = (servicePath: string) => {
+    window.location.href = servicePath;
+  };
+
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden">
       {/* Enhanced Animated Background Elements */}
@@ -71,22 +76,32 @@ export default function Footer() {
             
             {/* Company Info with Enhanced Styling */}
             <div className="lg:col-span-2">
-              <div className="flex items-center space-x-4 mb-8 group">
-                <div className="relative w-16 h-16 transform group-hover:scale-110 transition-transform duration-300">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl blur-sm opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                  <div className="relative w-full h-full">
-                    <Image
-                      src="/Tech 2 Design-01.png"
-                      alt="Tech 2 Design Logo"
-                      fill
-                      className="object-contain"
-                      priority
-                    />
+              <div className="flex items-center space-x-6 mb-8 group">
+                <div className="relative w-28 h-28 transform group-hover:scale-110 transition-transform duration-300">
+                  {/* Enhanced glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/40 via-purple-400/40 to-cyan-400/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                  
+                  {/* Logo container with enhanced styling */}
+                  <div className="relative w-full h-full bg-gradient-to-br from-white/15 to-white/25 backdrop-blur-md border border-white/40 rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-2xl"></div>
+                    <div className="relative w-full h-full p-4">
+                      <Image
+                        src="/Tech 2 Design-01.png"
+                        alt="Tech 2 Design Logo"
+                        fill
+                        className="object-contain drop-shadow-lg"
+                        priority
+                      />
+                    </div>
                   </div>
+                  
+                  {/* Border glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/50 via-purple-400/50 to-cyan-400/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
                 </div>
                 <div className="text-white">
-                  <div className="text-xs text-gray-300 font-medium tracking-wider">TECH 2 DESIGN</div>
-                  <div className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Tech 2 Design</div>
+                  <div className="text-sm text-gray-300 font-medium tracking-wider mb-1">TECH 2 DESIGN</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">Tech 2 Design</div>
+                  <div className="text-sm text-gray-400 mt-2 font-light">Innovating tomorrow, today.</div>
                 </div>
               </div>
               
@@ -192,7 +207,7 @@ export default function Footer() {
                   className="block text-gray-300 hover:text-white transition-all duration-300 group w-full text-left transform hover:translate-x-2"
                 >
                   <span className="flex items-center space-x-3">
-                    <span className="text-lg">Contact</span>
+                    <span className="text-lg">Contact Us</span>
                     <svg className="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -207,38 +222,50 @@ export default function Footer() {
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Services</span>
                 <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400"></div>
               </h3>
-              <div className="space-y-5">
-                <button 
-                  onClick={() => scrollToSection('services')} 
-                  className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
-                >
-                  UI/UX Design
-                </button>
-                <button 
-                  onClick={() => scrollToSection('services')} 
-                  className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
-                >
-                  3D Web Apps
-                </button>
-                <button 
-                  onClick={() => scrollToSection('services')} 
-                  className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
-                >
-                  AI Integration
-                </button>
-                <button 
-                  onClick={() => scrollToSection('services')} 
-                  className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
-                >
-                  Motion Design
-                </button>
-                <button 
-                  onClick={() => scrollToSection('services')} 
-                  className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
-                >
-                  Branding
-                </button>
-              </div>
+                             <div className="space-y-5">
+                                   <button 
+                    onClick={() => navigateToService('/services/ui-ux-design')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    UI/UX Design
+                  </button>
+                                   <button 
+                    onClick={() => navigateToService('/services/3d-web-apps')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    3D Web Apps
+                  </button>
+                                   <button 
+                    onClick={() => navigateToService('/services/ai-integration')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    AI Integration
+                  </button>
+                                   <button 
+                    onClick={() => navigateToService('/services/motion-design')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    Motion Design
+                  </button>
+                                   <button 
+                    onClick={() => navigateToService('/services/branding')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    Branding
+                  </button>
+                                   <button 
+                    onClick={() => navigateToService('/services/graphic-designing')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    Graphic Designing
+                  </button>
+                                   <button 
+                    onClick={() => navigateToService('/services/machine-learning')} 
+                    className="block text-gray-300 hover:text-white transition-all duration-300 cursor-pointer w-full text-left transform hover:translate-x-2 text-lg"
+                  >
+                    Machine Learning
+                  </button>
+               </div>
             </div>
           </div>
 
@@ -257,7 +284,7 @@ export default function Footer() {
                   © {currentYear} Tech 2 Design. All rights reserved.
                 </p>
                 <p className="text-gray-500 text-sm mt-2 font-light">
-                  Crafting the future, one pixel at a time.
+                  Innovating tomorrow, today.
                 </p>
               </div>
             </div>

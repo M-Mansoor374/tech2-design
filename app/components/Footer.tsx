@@ -80,7 +80,7 @@ export default function Footer() {
                 <div className="flex flex-col sm:flex-row items-center sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8 mb-6">
                   <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 transform group-hover:scale-105 transition-transform duration-300">
                     <Image
-                      src="/WhatsApp Image 2025-08-11 at 18.01.10_712d1d80.jpg"
+                      src="/WhatsApp Image 2025-08-12 at 13.05.18_e89f280b.LOGO - Edited.png"
                       alt="Tech 2 Design Logo"
                       fill
                       className="object-contain"
@@ -88,7 +88,7 @@ export default function Footer() {
                     />
                   </div>
                   <div className="text-white text-center sm:text-left">
-                    <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 font-semibold leading-tight bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">
+                    <div className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 font-semibold leading-tight bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">
                       Innovating tomorrow, today.
                     </div>
                   </div>

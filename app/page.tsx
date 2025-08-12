@@ -50,10 +50,10 @@ export default function Home() {
     <div className="flex justify-between items-center py-0 h-24">
             <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 group mr-4 sm:mr-6 lg:mr-8 transform hover:scale-105 transition-transform duration-300">
               <Image
-                src="/WhatsApp Image 2025-08-11 at 18.01.10_712d1d80.jpg"
+                src="/WhatsApp Image 2025-08-12 at 13.05.18_e89f280b.LOGO - Edited.png"
                 alt="Tech 2 Design Logo"
                 fill
-                className="object-contain drop-shadow-lg"
+                className="object-contain"
                 priority
               />
             </div>                       {/* Navigation Links with 3D Effects */}
@@ -289,7 +289,7 @@ export default function Home() {
               }}
               className="group px-6 sm:px-8 md:px-10 py-3 sm:py-4 border-2 border-white/30 hover:border-white/50 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 sm:space-x-3 backdrop-blur-sm hover:bg-white/5 text-sm sm:text-base"
             >
-              <span>Get Free Consultation</span>
+              <span>Get A Free Consultation</span>
               <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>

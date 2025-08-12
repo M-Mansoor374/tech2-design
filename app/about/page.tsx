@@ -48,8 +48,12 @@ export default function About() {
             We Are Tech2Design
           </h1>
           
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-2">
-            Designers. Innovators. Future builders.
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed font-light px-2">
+            Where Innovation Meets Excellence
+          </p>
+          
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 sm:mb-12 max-w-5xl mx-auto leading-relaxed font-light px-2">
+            We are a team of passionate <span className="text-blue-300 font-semibold">designers</span>, visionary <span className="text-purple-300 font-semibold">innovators</span>, and dedicated <span className="text-cyan-300 font-semibold">future builders</span> committed to transforming digital landscapes. Our expertise spans cutting-edge web development, strategic design solutions, and forward-thinking technology implementations that drive business growth and user engagement.
           </p>
 
           {/* Floating Tech Elements */}
@@ -356,24 +360,21 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      {/* Quote Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="relative p-6 sm:p-8 md:p-12 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl text-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl sm:rounded-3xl"></div>
-            <div className="relative z-10">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-relaxed">
-                &ldquo;We don&apos;t just design interfaces — we craft intelligent experiences.&rdquo;
-              </h2>
-              <p className="text-lg sm:text-xl text-gray-300">
-                — Tech2Design Team
-              </p>
+          
+          {/* Innovation Quote Box */}
+          <div className="mt-12 sm:mt-16 md:mt-20">
+            <div className="relative p-6 sm:p-8 md:p-12 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-xl border border-white/20 rounded-2xl sm:rounded-3xl text-center max-w-2xl mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-2xl sm:rounded-3xl"></div>
+              <div className="relative z-10">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-relaxed">
+                  &ldquo;Innovating tomorrow, today.&rdquo;
+                </h3>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
     </div>
   );
 } 
